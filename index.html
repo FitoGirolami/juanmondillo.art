@@ -5,18 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Juan Mondillo — Artista Plástico y Músico</title>
-  <meta name="description" content="Sitio oficial de Juan Mondillo. Artista autodidacta, arte feérico, imaginería y música. Trayectoria y obras." />
-  
+  <meta name="description" content="Sitio oficial de Juan Mondillo. Artista autodidacta (desde 1994), arte feérico e imaginería. Trayectoria, obras y música." />
+
   <style>
     :root {
-      --bg-body: #121418;       /* Fondo oscuro profundo */
-      --bg-card: #1c1f26;       /* Fondo de tarjetas/secciones */
-      --text-main: #e0e6ed;     /* Texto principal claro */
-      --text-muted: #949ca8;    /* Texto secundario grisáceo */
-      --accent: #d4af37;        /* Oro antiguo */
-      --accent-hover: #f3cf55;  /* Oro brillante para hover */
-      --border: #2c313c;        /* Bordes sutiles */
-      
+      --bg-body: #121418;
+      --bg-card: #1c1f26;
+      --text-main: #e0e6ed;
+      --text-muted: #949ca8;
+      --accent: #d4af37;
+      --accent-hover: #f3cf55;
+      --border: #2c313c;
       --font-stack: system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
     }
 
@@ -40,7 +39,6 @@
       padding: 40px 20px;
     }
 
-    /* HEADER */
     header {
       text-align: center;
       margin-bottom: 50px;
@@ -55,7 +53,8 @@
       object-fit: cover;
       border: 3px solid var(--accent);
       margin-bottom: 20px;
-      box-shadow: 0 0 25px rgba(212, 175, 55, 0.15); /* Resplandor dorado tenue */
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+      background: #0b0d12;
     }
 
     h1 {
@@ -75,23 +74,22 @@
       font-weight: 600;
     }
 
-    /* REDES SOCIALES */
     .social-links {
       display: flex;
       justify-content: center;
       gap: 30px;
       margin-top: 25px;
       font-size: 1rem;
+      flex-wrap: wrap;
     }
 
-    /* GALERÍA */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
       margin-bottom: 60px;
     }
-    
+
     .gallery img {
       width: 100%;
       height: 280px;
@@ -100,6 +98,7 @@
       border: 1px solid var(--border);
       transition: all 0.3s ease;
       filter: brightness(0.9) contrast(1.1);
+      background: #0b0d12;
     }
 
     .gallery img:hover {
@@ -109,7 +108,6 @@
       box-shadow: 0 5px 15px rgba(0,0,0,0.5);
     }
 
-    /* SECCIONES DE TEXTO */
     section { margin-bottom: 60px; }
 
     h2 {
@@ -121,19 +119,17 @@
       letter-spacing: 0.5px;
     }
 
-    /* Estilo específico para la bio */
     .bio-text p {
       margin-bottom: 1.5em;
-      text-align: justify; 
+      text-align: justify;
       color: var(--text-muted);
       font-size: 1.05rem;
     }
-    
+
     .bio-text p:first-of-type {
-      color: var(--text-main); /* Primer párrafo destacado */
+      color: var(--text-main);
     }
 
-    /* LISTAS DE HITOS */
     ul.clean-list {
       list-style: none;
       padding: 0;
@@ -163,7 +159,6 @@
       font-size: 0.95em;
     }
 
-    /* FOOTER */
     footer {
       text-align: center;
       margin-top: 80px;
@@ -182,18 +177,17 @@
     }
 
     .dev-credit:hover { opacity: 1; }
-    
+
     .dev-credit a {
-      color: var(--text-muted); 
+      color: var(--text-muted);
       border-bottom: 1px dotted var(--text-muted);
     }
-    
+
     .dev-credit a:hover {
       color: var(--accent);
       border-bottom-color: var(--accent);
     }
 
-    /* Responsive */
     @media (max-width: 600px) {
       h1 { font-size: 2rem; }
       .gallery { grid-template-columns: 1fr; }
@@ -203,26 +197,43 @@
 </head>
 
 <body>
-
   <div class="container">
-    
+
     <header>
-      <img src="Juan1.jpg" alt="Juan Mondillo" class="profile-img" onerror="this.src='https://via.placeholder.com/150/1c1f26/d4af37?text=Juan+Mondillo'"/>
-      
+      <!-- PERFIL: Juan1 -->
+      <img
+        src="Imagenes/Juan1.jpg"
+        alt="Juan Mondillo"
+        class="profile-img"
+        onerror="this.onerror=null;this.src='https://via.placeholder.com/150/1c1f26/d4af37?text=Juan+Mondillo';"
+      />
+
       <h1>Juan Mondillo</h1>
       <span class="subtitle">Artista Plástico &bull; Músico &bull; Escritor</span>
-      
+
       <div class="social-links">
-        <a href="https://www.instagram.com/juanmondillo" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/juan.mondillo" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/juanmondillo" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/juan.mondillo" target="_blank" rel="noopener">Facebook</a>
       </div>
     </header>
 
+    <!-- GALERÍA: Juan2 a Juan8 -->
     <section>
       <div class="gallery">
-        <img src="Juan2.jpg" alt="Obra de Juan Mondillo - Detalle 1" loading="lazy">
-        <img src="Juan3.jpg" alt="Obra de Juan Mondillo - Detalle 2" loading="lazy">
-        <img src="Juan4.jpg" alt="Obra de Juan Mondillo - Detalle 3" loading="lazy">
+        <img src="Imagenes/Juan2.jpg" alt="Obra de Juan Mondillo - Juan2" loading="lazy"
+             onerror="this.onerror=null;this.src='https://via.placeholder.com/900x600/1c1f26/949ca8?text=Imagen+no+disponible';">
+        <img src="Imagenes/Juan3.jpg" alt="Obra de Juan Mondillo - Juan3" loading="lazy"
+             onerror="this.onerror=null;this.src='https://via.placeholder.com/900x600/1c1f26/949ca8?text=Imagen+no+disponible';">
+        <img src="Imagenes/Juan4.jpg" alt="Obra de Juan Mondillo - Juan4" loading="lazy"
+             onerror="this.onerror=null;this.src='https://via.placeholder.com/900x600/1c1f26/949ca8?text=Imagen+no+disponible';">
+        <img src="Imagenes/Juan5.jpg" alt="Obra de Juan Mondillo - Juan5" loading="lazy"
+             onerror="this.onerror=null;this.src='https://via.placeholder.com/900x600/1c1f26/949ca8?text=Imagen+no+disponible';">
+        <img src="Imagenes/Juan6.jpg" alt="Obra de Juan Mondillo - Juan6" loading="lazy"
+             onerror="this.onerror=null;this.src='https://via.placeholder.com/900x600/1c1f26/949ca8?text=Imagen+no+disponible';">
+        <img src="Imagenes/Juan7.jpg" alt="Obra de Juan Mondillo - Juan7" loading="lazy"
+             onerror="this.onerror=null;this.src='https://via.placeholder.com/900x600/1c1f26/949ca8?text=Imagen+no+disponible';">
+        <img src="Imagenes/Juan8.jpg" alt="Obra de Juan Mondillo - Juan8" loading="lazy"
+             onerror="this.onerror=null;this.src='https://via.placeholder.com/900x600/1c1f26/949ca8?text=Imagen+no+disponible';">
       </div>
     </section>
 
@@ -230,51 +241,55 @@
       <section class="bio-text">
         <h2>Sobre el Artista</h2>
         <p>
-          Juan Mondillo es un artista autodidacta que desde 1994 dedica su trabajo a la exploración del arte feérico, la imaginería y la música, combinando producción plástica, investigación personal y experiencia en distintos territorios culturales[cite: 1, 2].
+          Soy Juan Mondillo. Desde 1994 vengo trabajando de forma constante en lo que llamo arte feérico e imaginería:
+          un camino de taller, de búsqueda y de oficio. Con el tiempo, esa búsqueda me llevó a mostrar mi trabajo en
+          distintas ciudades, ferias y espacios culturales, dentro y fuera de Argentina.
         </p>
         <p>
-          Cuenta con estudios en Perito Mercantil y Antropología, formación que acompaña su búsqueda artística y su interés por el sentido cultural de las expresiones simbólicas[cite: 1].
+          Estudié Perito Mercantil y Antropología. Lo académico acompaña, pero mi formación principal fue y sigue siendo
+          el trabajo diario: aprender haciendo, observar, probar materiales, equivocarme y volver a empezar.
         </p>
         <p>
-          Desde mediados de la década de 1990, Juan Mondillo ha realizado exposiciones, ferias y muestras en distintos puntos de Argentina y en el exterior, participando tanto en espacios institucionales como en ferias especializadas de artesanía y cultura alternativa [cite: 3-41].
+          A lo plástico se le suma lo musical. Toco bajo eléctrico desde 1984 y participé en proyectos muy distintos
+          entre sí, desde lo más directo hasta lo experimental. La música, como la escultura, es parte del mismo recorrido:
+          una manera de estar atento y de seguir investigando.
         </p>
       </section>
 
       <section>
         <h2>Hitos Destacados</h2>
         <ul class="clean-list">
-          <li><span class="date">2001-2004</span> Múltiples <strong>1º Premios</strong> en F.E.R.I.A.R. Córdoba (Papel Maché y Resinas)[cite: 43, 45, 46].</li>
-          <li><span class="date">2007</span> <strong>1º Premio Muñecos</strong>, Feria Internacional de Artesanías, Rural de Palermo[cite: 48].</li>
-          <li><span class="date">2003</span> Exposiciones en EE.UU.: <em>Stock Wood Renaissance Faire</em> (NY) y festivales en Manhattan[cite: 30, 32].</li>
-          <li><span class="date">2018-2019</span> Gira Europea: Talleres y ferias en Barcelona, Madrid y Galicia (España)[cite: 37, 38].</li>
-          <li><span class="date">2024-2025</span> Viaje al "país del más acá" (Arizona, EE.UU. / Sonora, México)[cite: 40, 41].</li>
-          <li><span class="date">2025</span> Prólogo para el libro <em>Guía definitiva sobre duendes</em> del autor Fito Girolami[cite: 42].</li>
+          <li><span class="date">2001–2004</span> Premios en F.E.R.I.A.R. Córdoba (Papel Maché y Resinas).</li>
+          <li><span class="date">2007</span> 1º Premio Muñecos, Feria Internacional de Artesanías, Rural de Palermo.</li>
+          <li><span class="date">2003</span> Actividades en EE.UU.: ferias y festivales en Nueva York y Nueva Jersey.</li>
+          <li><span class="date">2018–2019</span> España: ferias y talleres en Galicia, Barcelona y Madrid.</li>
+          <li><span class="date">2024–2025</span> Viajes a Nogales (Sonora, México / Arizona, EE.UU.).</li>
+          <li><span class="date">2025</span> Prólogo para <em>Guía definitiva sobre duendes</em> (autor: Fito Girolami, Ecuador).</li>
         </ul>
       </section>
 
       <section>
         <h2>Trayectoria Musical</h2>
         <p style="color:var(--text-muted); margin-bottom:20px; font-style:italic;">
-          Socio INAMU Nº 59850 | Bajista y Compositor desde 1984 [cite: 49, 65]
+          Socio INAMU Nº 59850 | Bajista desde 1984
         </p>
         <ul class="clean-list">
-          <li><span class="date">Actualidad</span> Integrante de los proyectos <strong>Perro Negro</strong> (México D.F.) y <strong>María Matus</strong>[cite: 64, 65].</li>
-          <li><span class="date">2024</span> Composición musical para la obra de teatro <em>El Lavandero</em>[cite: 63].</li>
-          <li><span class="date">2020</span> Música para la obra ganadora del premio nacional de teatro <em>El Hijo de La Difunta</em>[cite: 61].</li>
-          <li><span class="date">Histórico</span> Fundador e integrante de proyectos experimentales como <em>MantraStick</em>, <em>Jellon Lamb</em> y <em>El Séptimo Árbol</em>[cite: 60].</li>
+          <li><span class="date">Actualidad</span> Participación en proyectos musicales en México y colaboraciones recientes.</li>
+          <li><span class="date">2023–2024</span> Composición musical para la obra de teatro <em>El Lavandero</em>.</li>
+          <li><span class="date">2020</span> Música para <em>El Hijo de La Difunta</em> (obra ganadora del Premio Nacional del Teatro) y para el proyecto <em>La Danza del Fuego</em>.</li>
+          <li><span class="date">Recorrido</span> Proyectos y experiencias desde mediados de los 80 hasta hoy, incluyendo etapas de experimentación sonora y metodología musical.</li>
         </ul>
       </section>
     </main>
 
     <footer>
       <p>&copy; <script>document.write(new Date().getFullYear())</script> Juan Mondillo. Todos los derechos reservados.</p>
-      
+
       <div class="dev-credit">
-        Desarrollada por <a href="https://FitoGirolami.art" target="_blank" title="Arte y Desarrollo Web">FitoGirolami.art</a>
+        Desarrollada por <a href="https://FitoGirolami.art" target="_blank" rel="noopener" title="Arte y Desarrollo Web">FitoGirolami.art</a>
       </div>
     </footer>
 
   </div>
-
 </body>
 </html>
